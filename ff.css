@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2292ed;
+    --accent-color-dank:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    color:var(--primary-text-color)
+}
+.main-nav{
+    position: relative;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.smallb{
+    font-size: 1rem;
+    font-weight: 600;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+   font-size: 1.25rem; 
+   color:var(--secondary-text-color);
+   line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    /* means no contenet will not cross  */
+    max-width: 1180px;
+    overflow: hidden; 
+    /* hidden is done wo hide white space in responsive */
+    padding: var(--padding-inline-section);
+    
+
+}
+.bt{
+    color: white;
+    padding: 0px 30px;
+    text-align: center;
+    
+}
+.top{
+    background-color: #e74694;
+    height: 50px;
+    
+   
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+
+}
+.hiii{
+    list-style: none;
+}
+li{
+    padding: 0px,30px;
+}
+.comp-logo img{
+    width: 200px;
+}
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.nav-link ul {
+    justify-content: end;
+    gap: 40px;
+}
+.hov-link{
+    color: var(--primary-text-color);
+
+}
+.hov-link:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease ;
+}
+.p-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 600;
+    color: white !important;
+    padding: 12px 24px;
+    text-align: center;
+    box-shadow: 0 0 2px red;
+}
+.p-button:hover{
+    background-color: var(--accent-color-dank);
+
+}
+.s-button{
+    border: 0.5px solid black;
+    border-radius: 6px;
+    font-weight: 600;
+    color: rgb(43, 39, 39) ;
+    padding: 12px 24px;
+
+}
+.s-button:hover{
+    border-color: var(--accent-color-dank);
+    color: rgba(86, 173, 167, 0.52) !important
+}
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.h-section{
+    justify-content: center;
+    gap: 60px;
+}
+.h-left{
+   max-width: 40vw; 
+
+}
+.get-strt{
+    margin-top: 20px;
+}
+.h-left h2{
+    margin-top: 20px;
+}
+.h-right img{
+    width:100%
+}
+.logo{
+    width:100px;
+    height: 50px;
+    padding: 0px 30px;
+    
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+.comp-header{
+    text-align: center;
+    margin-block: 30px;
+    /* uppar neeche margin dne ke liye margin block */
+    color: var(--primary-text-color);
+}
+.f-head{
+    text-align: center;
+}
+.fec{
+    padding: 80px 20px 0 ;
+    background-image: url(./imgp2/ll.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.xx{
+    margin-bottom: 30px;
+}
+.f-card{
+    /* wo use flex in this f-card class that will make all item in one line inorder to remove that we gave direction as column that it will display in coloumn */
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    /* max width wont work if wrap is not used in parent div thats why see below i used wrap */
+    text-align: center;
+}
+.f-area{
+    flex-wrap: wrap ;
+    gap: 20px;
+
+}
+.bf-section{
+    padding: 30px 20px 0;
+}
+.bf-container{
+    gap: 30px;
+}
+.f-img img{
+    width: 100%;
+} 
+.f-info{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* jaha se flex start hua hai wohi se sab item start hoge (left mai chipke hoge) */
+
+}
+.f-info img{
+    
+    align-items: flex-start;
+}
+.oo{
+    gap: 10px;
+}
+.kk{
+    font-size: 40px;
+}
+.b-head{
+    flex-direction: column;
+    gap: 20px;
+}
+.ex-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./imgp2/q.jpeg);
+    /* image thodi si black krne ke liye */
+    background-size: cover;
+}
+.ex-card1{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./imgp2/w.jpeg);
+    /* image thodi si black krne ke liye */
+    background-size: cover;
+}
+.ex-card2{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./imgp2/x.jpeg);
+    /* image thodi si black krne ke liye */
+    background-size: cover;
+}
+.ex-card3{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: #000;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./imgp2/y.jpeg);
+    /* image thodi si black krne ke liye */
+    background-size: cover;
+}
+.c-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+.ex-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+    
+}
+.ex-card1:hover{
+    box-shadow: 0 0 10px #888;
+}
+.ex-card2:hover{
+    box-shadow: 0 0 10px #888;
+}
+.ex-card3:hover{
+    box-shadow: 0 0 10px #888;
+}
+.ex-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.ulf{
+    flex-direction: column;
+}
+.pp{
+    padding: 0px 15px;
+}
+.ri-pd{
+    padding: 40px 70px
+}
+.right-el{
+    gap:40px;
+}
+.ctasec{
+    background-color: #183b54;
+    color: #b9cde4;
+    height: 500px;
+}
+.cet11{
+    flex-direction: column;
+    gap: 10px;
+}
+.cet1{
+    padding: 100px 50px;
+}
+.link-col{
+    flex-direction: column;
+    align-items: flex-start;
+    /* left mai align ho jayegai */
+    gap: 20px;
+}
+.f-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.sf-container{
+    justify-content: center;
+    gap: 40px;
+}
+.subf{
+    
+    background-color:#b9cde4 ;
+}
+.nav-toggle{
+    display: none;
+}
+
+
+
